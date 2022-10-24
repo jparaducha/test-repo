@@ -1,3 +1,5 @@
+package testNG;
+
 public class MockClass {
 
     public String helloWorld(){
