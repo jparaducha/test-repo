@@ -33,8 +33,8 @@ public class SimpleTest {
         int result1 = mockClass.countOddNumbersInArray(array1);
         int result2 = mockClass.countOddNumbersInArray(array2);
 
-        Assert.assertEquals(result1, 5, "ADD messages");
-        Assert.assertEquals(result2, 0);
+        Assert.assertEquals(result1, 5, "odd numbers should be 5");
+        Assert.assertEquals(result2, 0, "odd numbers should be 0");
     }
 
     @Test(groups = { "math" })
@@ -44,16 +44,16 @@ public class SimpleTest {
         boolean divisible2 = mockClass.isDivisible(51,17);
         boolean divisible3 = mockClass.isDivisible(12.5, 3);
 
-        Assert.assertEquals(divisible1,true);
-        Assert.assertEquals(divisible2,true);
-        Assert.assertEquals(divisible3,false);
+        Assert.assertEquals(divisible1,true, "number should be divisible");
+        Assert.assertEquals(divisible2,true, "number should be divisible");
+        Assert.assertEquals(divisible3,false, "number should not be divisible");
     }
 
     @Test(groups = { "string" })
     public void testHelloWorld(){
         String result = mockClass.helloWorld();
 
-        Assert.assertEquals(result, "Hello World");
+        Assert.assertEquals(result, "Hello World", "method should return Hello World");
     }
 
 
