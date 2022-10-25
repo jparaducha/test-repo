@@ -11,6 +11,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+     <!--   <carina.version>7.4.26</carina.version> -->
     </properties>
 
 
@@ -75,6 +76,118 @@
             <version>6.14.3</version>
             <scope>test</scope>
         </dependency>
+
+        <!--
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.4.0</version>
+            <scope>test</scope>
+        </dependency>
+
+                 ^^^^^
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+        </dependency>
+
+
+
+        <dependency>
+            do not remove otherwise 17 compilation failures
+            <groupId>io.rest-assured</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>4.3.3</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.everit.json</groupId>
+            <artifactId>org.everit.json.schema</artifactId>
+            <version>1.5.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20160810</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+
+
+
+
+
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-proxy</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-commons</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-api</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-dataprovider</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-aws-s3</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-azure</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-appcenter</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-utils</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-reporting</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-webdriver</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-core</artifactId>
+            <version>${carina.version}</version>
+        </dependency>
+
+        -->
     </dependencies>
 
 

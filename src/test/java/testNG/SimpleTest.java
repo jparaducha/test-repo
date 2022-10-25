@@ -20,7 +20,7 @@ public class SimpleTest {
 
     @BeforeClass(alwaysRun = true)
     public void BeforeClassMethod(){
-        LOGGER.info("Before class method");
+        //LOGGER.info("Before class method");
 
         array1 = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         array2 = new int[]{2,4,6,8,10,12};
@@ -33,7 +33,7 @@ public class SimpleTest {
         int result1 = mockClass.countOddNumbersInArray(array1);
         int result2 = mockClass.countOddNumbersInArray(array2);
 
-        Assert.assertEquals(result1, 5);
+        Assert.assertEquals(result1, 5, "ADD messages");
         Assert.assertEquals(result2, 0);
     }
 
@@ -59,12 +59,12 @@ public class SimpleTest {
 
     @BeforeSuite( alwaysRun = true)
     public void BeforeSuite(){
-        LOGGER.info("Before suite");
+        //LOGGER.info("Before suite");
     }
 
     @BeforeTest( alwaysRun = true)
     public void BeforeTest(){
-        LOGGER.info("Before test");
+        //LOGGER.info("Before test");
 
         mockClass = new MockClass();
     }
